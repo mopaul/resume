@@ -1,0 +1,105 @@
+%%% start of file `template.tex'.
+%% Copyright 2006-2012 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[13pt,a4paper,roman]{moderncv}   % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+%\usepackage{marvosym}
+% moderncv themes
+\moderncvstyle{banking}                        % style options are 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue}                          % color options 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+\renewcommand{\familydefault}{\sfdefault}    % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+\nopagenumbers{}                             % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%usepackage[utf8]{inputenc}                  % if you are not using xelatex ou lualatex, replace by the encoding you are using
+%\usepackage{CJKutf8}                         % if you need to use CJK to typeset your resume in Chinese, Japanese or Korean
+
+% adjust the page margins
+\usepackage[scale=0.90]{geometry}
+%\setlength{\hintscolumnwidth}{4cm}           % if you want to change the width of the column with the dates
+%\setlength{\makecvtitlenamewidth}{10cm}      % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+% personal data
+\firstname{Moutupsi}
+\familyname{Paul}
+%\title{Resumé title}                          % optional, remove / comment the line if not wanted
+\address{Chapin 1162 K, SBU}{ Stony Brook, NY-11790}    % optional, remove / comment the line if not wanted
+\mobile{+1~(631)~353~8475}                     % optional, remove / comment the line if not wanted
+\phone{+1~(631)~216~2512}                      % optional, remove / comment the line if not wanted
+%\fax{+3~(456)~789~012}                        % optional, remove / comment the line if not wanted
+\email{moutupsi.paul@stonybrook.edu}                          % optional, remove / comment the line if not wanted
+%\homepage{www.johndoe.com}                    % optional, remove / comment the line if not wanted
+%\extrainfo{additional information}            % optional, remove / comment the line if not wanted
+%\photo[64pt][0.4pt]{picture}                  % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+%\quote{Some quote}                            % optional, remove / comment the line if not wanted
+
+% to show numerical labels in the bibliography (default is to show no labels); only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+%\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]% CONSIDER REPLACING THE ABOVE BY THIS
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%\begin{CJK*}{UTF8}{gbsn}                     % to typeset your resume in Chinese using CJK
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+\section{Education}
+\cventry{{\small Aug 2012--Dec 2013}}{MS in Computer Science}{SUNY Stony Brook University}{Stony Brook, NY}{\textit{3.88/4}}{Courses:   Machine Learning, Analysis of Algorithms, Natural Language Processing, Operating Systems,Computer Networks, Network Security, Words and Pictures (Vision and ML) }  % arguments 3 to 6 can be left empty
+\cventry{{\small Jul 2005--Jun 2009}}{B.Tech in Computer Science}{National Institute of Technology}{India}{\textit{8.66/10}}{Courses: Data Structures, Algorithms Design and Analysis, Operating Systems, Computer Networks, Theory of Computation, Parallel Programming, Compilers, 8085/8086 Microprocessors, Computer Architecture, Network Security, Data Mining. }
+
+\section{Experience}
+\cventry{{\small Jun 2013--Aug 2013}}{\iffalse Intern \fi}{Microsoft}{Redmond,USA}{}{Bing, Indexing and Knowledge, Ranking and relevance of Related Entities}
+\cventry{{\small Sep 2011--Aug 2012}}{\iffalse Senior Software Developer \fi}{Samsung Electronics}{Bangalore,India}{}{Common Services Framework, Smart Devices Networking}
+\cventry{{\small Jun 2010--Sep 2011}}{\iffalse Software Engineer \fi}{Mcafee India Pvt. Ltd}{Bangalore,India}{}{Performance Evaluation and Functional testing}
+%\cventry{{\small Jun 2007--Jul 2008}}{Intern}{Sun Microsystems }{India}{}{National Institute Of Technology, Campus Ambassador}{}
+
+\section{Projects}
+\subsection{Ranking and relevance of Related Entities}
+\cvitem{C\# and SCOPE}{My intern project at Bing was focussed on improving the relevance of Related entities. I took a segmented approach and along with cosearch, covisit user data, incorporated information from various knowledge bases like wikipedia, lastfm, Satori(Bing's knowledge graph) to improve relevance of various segments like Musicians, Movies, Movie Cast, Companies, Spouses etc. }
+\subsection{Webpage Classification}
+\cvitem{Python, Scikit framework}{Machine Learning class project. Explored different text based features like \textbf{ngrams} and non-text features like \textbf{hyperlinks, hypertext, neighbour links} etc. using classification technique like \textbf{Naive Bayes, SVM, semisupervised learning} on CMU's WebKB dataset. }
+\subsection{News and Blog Analysis Lab}
+\cvitem{Python}{This project is done as a part of News and Blog Analysis Lab , Stony Brook, under the guidance of Dr. Steven Skienna. This project deals with \textbf{Embedded semantic Analysis} and \textbf{Exploring Linguistics relations in Word Embeddings}.}
+%\subsection{JOS Lab}
+%\cvitem{C}{This project was undertaken as a part of OS coursework in Stony Brook. JOS is a simple Linux like OS but much less complicated and has a \textbf{micro kernel}. Throughout the course work we built in different functionalities of Kernel namely Paging, Processes, Multiple CPUs, IPC, and also extend to support File system and network.}
+\subsection{Timeline Detection of Movies from Scripts}
+\cvitem{Java, Python }{This project explores text based features in a Movie script and  successfully use them to identify which year the movie was produced. We mainly used \textbf{statistical} and \textbf{stylometric}(style of writing) based features to help classifier distinguish between movies in different era.}
+\subsection{Face recognition using captions}
+\cvitem{Matlab}{In this project we expolited the caption associated with a photo to improve face recognition. We used a combination of facial features and NER. The main techniques used was clustering.}
+\subsection{Common Services Framework}
+\cvitem{Java, RDF}{The goal of the project is to create a common framework for all SNS based (Samsung) services using Web development techniques, which will allow new \textbf{SNS services} an easy integration with already existing SNS data and support for multiple platforms.  My contribution in the project was towards designing an \textbf{RDF based solution} to store and manage user data.}
+\subsection{Smart Device Networking}
+\cvitem{Android, Java, Javascript}{This project attempts to converge all smart devices of a user and enable seamless interaction. Another goal of the project is to enable a rich \textbf{recommendation system} for multimedia, web content and apps. My initial contribution in this project was to design and develop services that can collect data from user interfaces (\textbf{Android} hand held devices, \textbf{TV}, \textbf{Chrome}).This acts as input data to recommendation Engine. In the later part of the project I also contributed towards handling \textbf{XMPP messages} from the server to allow actual convergence amongst device nodes.}
+\subsection{Loadable Kernel Module in JOS}
+\cvitem{C, ELF binary}{This project\'s purpose is to build a framework in JOS to support \textbf{Loadable Kernel Modules}. We build functionalities like insmod, rmmod in JOS and support installation of re-locatable of object modules as part of Kernel. This project required extensive understanding of \textbf{ELF} binary format.}
+\subsection{Virus Scan core}
+\cvitem{VBA, shell scripting}{This is the crux of all Mcafee anti-virus products, the chief components being the anti-virus engine and user defined rules. As a part of quality assurance team my chief responsibility was contribution towards \textbf{performance evaluation} and \textbf{efficiency analysis} of Mcafee Virus Scan Core and functional feature testing of modules like \textbf{Script scanner. Email Scanner}.}
+\subsection{Email Scanner tools}
+\cvitem{VBA, shell scripting}{Develop tools to test functionality as well as performance of the module. I had to build an\textbf{ email blasting tool} on the lines of blast.exe with additional functionality to send blasts of MIME messages as well. This is done as an MS office plugin written in VBA.}
+
+\section{Computer skills}
+\cvitem{Programming}{C, JAVA(Intermediate)}
+\cvitem{Scripting}{Python, C\#, JavaScript, CSS, XML, HTML, MATLAB}
+\cvitem{OS}{Unix, Linux, Android, Windows, JOS}
+\cvitem{SCM}{Git, Clearcase}
+\cvitem{Others}{XMPP, REST, Chrome Extension, Socket programming, RDF (using Jena API)}
+
+\section{Awards and Achievements}
+\cvitem{May 2010}{Awarded \textbf{best performer} in the batch during \textbf{Aricent training program} PRISM.}
+\cvitem{May 2010}{Awarded the \textbf{best project}(Tour guide, Symbian app, Python)during Aricent training program PRISM.}
+\cvitem{Feb 2010}{Graduate Aptitude Test in Engineering(\textbf{GATE})(Nation-wide, India) with \textbf{99.89} percentile.}
+\cvitem{2005}{Stood \textbf{8th} during Senior Secondary exam from AHSEC (Assam Higher Secondary Education Board.}
+\cvitem{2005}{\textbf{Topped} (in the state) in \textbf{Physics} during Senior Secondary Exam from AHSEC.}
+
+\end{document}

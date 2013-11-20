@@ -1,0 +1,17 @@
+This is pdfTeX, Version 3.1415926-2.3-1.40.12 (MiKTeX 2.9) (preloaded format=pdftex 2013.2.4)  4 FEB 2013 23:51
+entering extended mode
+**C:/Users/maverick/Documents/resume/moderncv-old/moderncv/examples/moderncvsty
+leclassic.sty
+
+(C:/Users/maverick/Documents/resume/moderncv-old/moderncv/examples/moderncvstyl
+eclassic.sty
+! Undefined control sequence.
+l.12 \NeedsTeXFormat
+                    {LaTeX2e}
+? 
+! Emergency stop.
+l.12 \NeedsTeXFormat
+                    {LaTeX2e}
+End of file on the terminal!
+
+!  ==> Fatal error occurred, no output PDF file produced!
